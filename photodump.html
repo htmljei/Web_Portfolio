@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Dump</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: url('c:/Users/brian/Downloads/red-business-border-modern-background-design-vector/bgwallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #f0ad4e;
+            font-size: 2.5em;
+            font-family: Georgia, serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery-item {
+            position: relative;
+            width: calc(20% - 10px);
+            margin: 5px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .gallery-item .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #ad721e;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #f0ad4e;
+            transform: scale(1.1);
+        }
+        .content-container {
+            display: block;
+            overflow: auto; 
+            width: 100%;
+            height: 100%;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <div align="center">
+            <hr>
+            <h1>WELCOME TO MY PHOTODUMP</h1>
+            <hr>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\7798ddb8-5eaf-479b-a1f2-0789dd5d180b.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\7798ddb8-5eaf-479b-a1f2-0789dd5d180b.jpg" alt="Mood" title="This is an image of a random qoute.">
+                    <div class="description">Mood</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\dc64325a-4e10-4b13-ad06-b21851a31d84.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\dc64325a-4e10-4b13-ad06-b21851a31d84.jpg" alt="Kitty" title="This is an image of a Pussy Lover.">
+                    <div class="description">Kitty</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\d2091892-9558-4e9d-9963-093a0c5fb9d9.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\d2091892-9558-4e9d-9963-093a0c5fb9d9.jpg" alt="Red Label" title="This is an image of a alcoholic drink.">
+                    <div class="description">Red Label</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\cece6956-c0fb-46e0-bf32-513afbe934e0.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\cece6956-c0fb-46e0-bf32-513afbe934e0.jpg" alt="UE Logo" title="This is an image of a UE Logo.">
+                    <div class="description">UE Logo</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\fa88b612-c372-4ab7-9d68-a315bfc47a9b.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\fa88b612-c372-4ab7-9d68-a315bfc47a9b.jpg" alt="Graffiti" title="This is an image of a Graffiti by Crank.">
+                    <div class="description">Graffiti</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\d7be7944-b4d6-4f55-8420-7d0316cb7b82.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\d7be7944-b4d6-4f55-8420-7d0316cb7b82.jpg" alt="Achievement" title="This is an image of a Achievement.">
+                    <div class="description">Achievement</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\615eb0f2-cf35-4bbf-98ff-33ed830e5abc.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\615eb0f2-cf35-4bbf-98ff-33ed830e5abc.jpg" alt="Museum" title="This is an image of a display in museum.">
+                    <div class="description">Museum</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\b65fd55e-36ea-4128-a566-576560fd853b.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\b65fd55e-36ea-4128-a566-576560fd853b.jpg" alt="LRT Sunset" title="This is an image of a sunset.">
+                    <div class="description">LRT Sunset</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\2d1f1eb8-3f00-4fb1-b034-2a8b23bd1a6a.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\2d1f1eb8-3f00-4fb1-b034-2a8b23bd1a6a.jpg" alt="Cloverleaf" title="This is an image of a Ayala Cloveleaf.">
+                    <div class="description">Cloverleaf</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\7e5ba02b-29e5-4d33-8fcd-6f864d8eb7f5.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\7e5ba02b-29e5-4d33-8fcd-6f864d8eb7f5.jpg" alt="Scenery" title="This is an image of Scenery.">
+                    <div class="description">Scenery</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\102b4128-8bb5-41c6-be98-1dbe890f5e18.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\102b4128-8bb5-41c6-be98-1dbe890f5e18.jpg" alt="Sticky" title="This is an image of a sticker tag.">
+                    <div class="description">Sticky</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\343621b2-8d01-48d3-ba7a-e80654e13eca.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\343621b2-8d01-48d3-ba7a-e80654e13eca.jpg" alt="Sneakers" title="This is an image of a friends sneakers.">
+                    <div class="description">Sneakers</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\7248a131-b411-4aa8-9b52-e79887a4fb1a.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\7248a131-b411-4aa8-9b52-e79887a4fb1a.jpg" alt="Burger" title="This is an image of burger.">
+                    <div class="description">Burger</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\20c8255d-b163-4371-9649-7b4215095b0f.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\20c8255d-b163-4371-9649-7b4215095b0f.jpg" alt="Hiwomi" title="This is an image of my girlfriend.">
+                    <div class="description">Hiwomi</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\6fc169d9-042f-4c4c-a8ae-88caaf1f7887.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\6fc169d9-042f-4c4c-a8ae-88caaf1f7887.jpg" alt="Food 1" title="This is an image of food.">
+                    <div class="description">Food 1</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\d5fbc727-b8c0-49b0-bef8-763a6daa275c.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\d5fbc727-b8c0-49b0-bef8-763a6daa275c.jpg" alt="Food 2" title="This is an image of food.">
+                    <div class="description">Food 2</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\d8fd9295-ba21-4ee7-9572-68de992fa0b0.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\d8fd9295-ba21-4ee7-9572-68de992fa0b0.jpg" alt="Food 3" title="This is an image of food.">
+                    <div class="description">Food 3</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\f768a87a-f968-48a7-a936-33668941f15a.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\f768a87a-f968-48a7-a936-33668941f15a.jpg" alt="Food 4" title="This is an image of food.">
+                    <div class="description">Food 4</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\4c8f8eb4-0390-43b9-9e55-f60f201a77e2.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\4c8f8eb4-0390-43b9-9e55-f60f201a77e2.jpg" alt="Food 5" title="This is an image of a food.">
+                    <div class="description">Food 5</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="c:\Users\brian\Downloads\5e383426-8a59-4d1c-8b8f-d91ecf2c6465.jpg" target="_blank">
+                    <img src="c:\Users\brian\Downloads\5e383426-8a59-4d1c-8b8f-d91ecf2c6465.jpg" alt="Food 6" title="This is an image of a food.">
+                    <div class="description">Food 6</div>
+                </a>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="#top" class="button"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="index.html" class="button"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: url('c:/Users/brian/Downloads/red-business-border-modern-background-design-vector/bgwallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #6a1b9a;
+            font-size: 2.5em;
+            font-family: Georgia, serif;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #6a1b9a;
+            font-size: 2em;
+            margin-top: 1.5rem;
+        }
+        .audio-sample {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .audio-sample img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .audio-sample div {
+            max-width: 500px;
+            text-align: left;
+        }
+        .audio-sample p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #a746e3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .button i {
+            margin-right: 8px;
+        }
+        .button:hover {
+            background-color: #6a1b9a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Beat</h1>
+        
+        <h2>Hip-hop</h2>
+        <div class="audio-sample">
+            <img src="c:/Users/brian/AppData/Roaming/Microsoft/Windows/Network Shortcuts/drake.jpg" alt="Drake">
+            <div>
+                <p>Artist: Drake</p>
+                <p>Title: Champagne Poetry</p>
+                <audio controls>
+                    <source src="c:/Users/brian/Downloads/Drake - Champagne Poetry.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="audio-sample">
+            <img src="c:/Users/brian/AppData/Roaming/Microsoft/Windows/Network Shortcuts/kendrick.jpg" alt="Kendrick Lamar">
+            <div>
+                <p>Artist: Kendrick Lamar</p>
+                <p>Title: luther</p>
+                <audio controls>
+                    <source src="c:/Users/brian/Downloads/Kendrick Lamar - luther.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <h2>Pop Rap</h2>
+        <div class="audio-sample">
+            <img src="c:/Users/brian/AppData/Roaming/Microsoft/Windows/Network Shortcuts/travis.jpg" alt="Travis Scott">
+            <div>
+                <p>Artist: Travis Scott</p>
+                <p>Title: SICKO MODE</p>
+                <audio controls>
+                    <source src="c:/Users/brian/Downloads/Travis Scott - SICKO MODE.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <h2>Alternative/Indie</h2>
+        <div class="audio-sample">
+            <img src="c:/Users/brian/AppData/Roaming/Microsoft/Windows/Network Shortcuts/1975.jpg" alt="The 1975">
+            <div>
+                <p>Artist: The 1975</p>
+                <p>Title: About You</p>
+                <audio controls>
+                    <source src="c:/Users/brian/Downloads/The 1975 - About You.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <a href="media.html" class="button"><i class="fas fa-arrow-left"></i> Back</a>
+    </div>
+</body>
+</html>
