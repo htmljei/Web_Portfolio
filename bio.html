@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: url('./images/bgwallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3; 
+            font-size: 2.5em;
+            font-family: Georgia, serif;
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 2em;
+            font-family: Georgia, serif;
+        }
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .img-container {
+            display: block;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .img-fluid {
+            max-width: 20%; 
+            height: 100%;
+            border-radius: 0px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .img-cropped {
+            max-width: 20%; 
+            height: 150px; 
+            object-fit: cover;
+            border-radius: 0px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links a, .container a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF; 
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .nav-links a:hover, .container a:hover {
+            background-color: #0056b3; 
+            transform: scale(1.1);
+        }
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        .content-container {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <div align="center">
+            <hr>
+            <h1>Growing Up, Growing Strong</h1>
+            <div class="nav-links" id="top">
+                <a href="#childhood">Childhood Years</a> | 
+                <a href="#teenage">Teenage Years</a> | 
+                <a href="#college">College Years</a>
+            </div>
+            <hr>
+        </div>
+
+        <div align="justify">
+        <blockquote>
+            <h2 id="childhood">Childhood Years</h2>
+            <p>
+                <sup>1</sup> I was born and raised in Quezon City, a city with a peaceful yet simple lifestyle. 
+                <sup>2</sup> My family lived in a small but cozy home in a quiet neighborhood. 
+                <sup>3</sup> My parents always encouraged me to focus on my studies. 
+                <sup>4</sup> I attended a public school within walking distance from our house.
+                <sup>5</sup> Every morning, I woke up early and followed my usual routine. 
+                <sup>6</sup> During recess, I loved playing tag and hide and seek with my classmates. 
+                <sup>7</sup> Watching cartoons and anime made my afternoons exciting.
+                <sup>8</sup> My mom often asked me to help with household chores. 
+                <sup>9</sup> Our family outings were usually to malls or parks on weekends.
+                <sup>10</sup> I was not very social and had only a few friends.
+                <sup>11</sup> I preferred staying at home playing video games or watching movies.
+                <sup>12</sup> The streets of Quezon City were always busy.
+                <sup>13</sup> My parents were strict, and I had to ask for permission to go outside.
+                <sup>14</sup> I wasn’t involved in any extracurricular activities.
+                <sup>15</sup> My childhood was simple, but I was content.
+                <sup>16</sup> I always obeyed my parents and focused on my studies.
+                <sup>17</sup> I never excelled in sports, but I enjoyed school.
+                <sup>18</sup> Looking back, my childhood was peaceful and filled with happy moments.
+                <sup>19</sup> Though ordinary, I appreciate my past experiences.
+                <sup>20</sup> I realize now that simplicity made my childhood special.
+            </p>
+            <div class="img-container">
+                <a href="./images/childhood1.jpg" target="_blank">
+                    <img src="./images/childhood1.jpg" alt="Childhood Image 1" title="Childhood Image 1" class="img-fluid">
+                </a>
+                <a href="./images/childhood2.jpg" target="_blank">
+                    <img src="./images/childhood2.jpg" alt="Childhood Image 2" title="Childhood Image 2" class="img-fluid">
+                </a>
+                <a href="./images/childhood3.jpg" target="_blank">
+                    <img src="./images/childhood3.jpg" alt="Childhood Image 3" title="Childhood Image 3" class="img-fluid">
+                </a>
+                <a href="./images/childhood4.jpg" target="_blank">
+                    <img src="./images/childhood4.jpg" alt="Childhood Image 4" title="Childhood Image 4" class="img-fluid">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="#top" class="button"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            <h2 id="teenage">Teenage Years</h2>
+            <p>
+                <sup>1</sup> As a teenager, I was just an ordinary student. 
+                <sup>2</sup> I was not the best in my class, but I managed to pass all my subjects. 
+                <sup>3</sup> In senior high school, I chose ICT as my track because of my interest in computers.
+                <sup>4</sup> Coding was initially difficult for me.
+                <sup>5</sup> I often got distracted and spent more time playing games.
+                <sup>6</sup> My father reminded me to focus, but I still stayed up late.
+                <sup>7</sup> Sometimes, my friends and I studied together at coffee shops.
+                <sup>8</sup> I was not active in school clubs or organizations.
+                <sup>9</sup> I preferred spending my free time with friends rather than joining school events.
+                <sup>10</sup> Street food such as fish balls and kwek-kwek became our favorites.
+                <sup>11</sup> We enjoyed hanging out at malls during weekends.
+                <sup>12</sup> My parents didn’t always allow me to go out.
+                <sup>13</sup> Sometimes, I had to make excuses just to meet friends.
+                <sup>14</sup> I managed to improve my grades before graduating.
+                <sup>15</sup> Graduation day was a proud moment for my parents and me.
+                <sup>16</sup> It felt rewarding to see their happy faces.
+                <sup>17</sup> Senior high school passed by quickly.
+                <sup>18</sup> Soon, I was preparing for my college journey.
+                <sup>19</sup> I was nervous but also excited for the challenges ahead.
+                <sup>20</sup> I promised myself that I would give my best in college.
+            </p>
+            <div class="img-container">
+                <a href="./images/teenage1.jpg" target="_blank">
+                    <img src="./images/teenage1.jpg" alt="Teenage Image 1" title="Teenage Image 1" class="img-fluid">
+                </a>
+                <a href="./images/teenage2.jpg" target="_blank">
+                    <img src="./images/teenage2.jpg" alt="Teenage Image 2" title="Teenage Image 2" class="img-fluid">
+                </a>
+                <a href="./images/teenage3.jpg" target="_blank">
+                    <img src="./images/teenage3.jpg" alt="Teenage Image 3" title="Teenage Image 3" class="img-fluid">
+                </a>
+                <a href="./images/teenage4.jpg" target="_blank">
+                    <img src="./images/teenage4.jpg" alt="Teenage Image 4" title="Teenage Image 4" class="img-fluid">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="#top" class="button"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            <h2 id="college">College Years</h2>
+            <p>
+                <sup>1</sup> Currently, I am a second-year BSIT student at University of the East. 
+                <sup>2</sup> The first year was tough because everything was new to me. 
+                <sup>3</sup> Learning programming languages was one of the biggest challenges.
+                <sup>4</sup> Some subjects were difficult, but I put in extra effort.
+                <sup>5</sup> Fortunately, I met great friends who helped me adjust.
+                <sup>6</sup> We often studied together and worked on projects as a team.
+                <sup>7</sup> After class, we enjoyed eating at small food stalls near the school.
+                <sup>8</sup> Sometimes, we played online games to relieve stress.
+                <sup>9</sup> College is definitely harder than high school.
+                <sup>10</sup> I struggled with deadlines, exams, and challenging lessons.
+                <sup>11</sup> However, I remind myself of why I chose this path.
+                <sup>12</sup> I want to gain more technical knowledge and secure a good job.
+                <sup>13</sup> Over time, I have learned better time management skills.
+                <sup>14</sup> I still find some subjects difficult but continue to work hard.
+                <sup>15</sup> Balancing study and social life is important.
+                <sup>16</sup> On weekends, I go out with friends to relax.
+                <sup>17</sup> College has been a tough but meaningful journey.
+                <sup>18</sup> I believe that hard work will help me achieve my goals.
+                <sup>19</sup> My dream is to work in the IT industry and support my family.
+                <sup>20</sup> Although the road ahead is challenging, I am determined to succeed.
+            </p>
+            <div class="img-container">
+                <a href="./images/college1.jpg" target="_blank">
+                    <img src="./images/college1.jpg" alt="College Image 1" title="College Image 1" class="img-fluid">
+                </a>
+                <a href="./images/college2.jpg" target="_blank">
+                    <img src="./images/college2.jpg" alt="College Image 2" title="College Image 2" class="img-fluid">
+                </a>
+                <a href="./images/college3.jpg" target="_blank">
+                    <img src="./images/college3.jpg" alt="College Image 3" title="College Image 3" class="img-fluid">
+                </a>
+                <a href="./images/college4.jpg" target="_blank">
+                    <img src="./images/college4.jpg" alt="College Image 4" title="College Image 4" class="img-fluid">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="#top" class="button"><i class="fas fa-arrow-up"></i> Go Top</a>
+                <a href="index.html" class="button"><i class="fas fa-home"></i> Home</a>
+            </div>
+        </blockquote>
+    </div>
+
+</body>
+</html>
